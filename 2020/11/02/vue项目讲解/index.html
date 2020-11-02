@@ -5,13 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>vue项目讲解 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="项目大体介绍 什么是Mock数据？  处于开发环境模拟接口返回的数据（用于开发状态后端还没给接口） 不会影响生产环境，只是方便我们还没与后端交互时不阻塞我们开发流程   Mock数据的好处   团队可以并行工作（后端进度不至于影响前端开发进度）  可以用来演示开发成果，实时反馈开发进度  模拟测试并简单了解接口编写为全栈打基础  编写Mock接口：vue.config.js中去配置：1234567">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue项目讲解">
+<meta property="og:url" content="http://example.com/2020/11/02/vue%E9%A1%B9%E7%9B%AE%E8%AE%B2%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="项目大体介绍 什么是Mock数据？  处于开发环境模拟接口返回的数据（用于开发状态后端还没给接口） 不会影响生产环境，只是方便我们还没与后端交互时不阻塞我们开发流程   Mock数据的好处   团队可以并行工作（后端进度不至于影响前端开发进度）  可以用来演示开发成果，实时反馈开发进度  模拟测试并简单了解接口编写为全栈打基础  编写Mock接口：vue.config.js中去配置：1234567">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-02T12:33:16.000Z">
+<meta property="article:modified_time" content="2020-11-02T15:24:50.326Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-vue项目讲解" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-vue项目讲解" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/11/02/vue%E9%A1%B9%E7%9B%AE%E8%AE%B2%E8%A7%A3/" class="article-date">
   <time datetime="2020-11-02T12:33:16.000Z" itemprop="datePublished">2020-11-02</time>
@@ -77,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/02/vue%E9%A1%B9%E7%9B%AE%E8%AE%B2%E8%A7%A3/">vue项目讲解</a>
+    <h1 class="article-title" itemprop="name">
+      vue项目讲解
     </h1>
   
 
@@ -133,431 +135,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-js基础" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/02/js%E5%9F%BA%E7%A1%80/" class="article-date">
-  <time datetime="2020-11-02T06:17:11.000Z" itemprop="datePublished">2020-11-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/02/js%E5%9F%BA%E7%A1%80/">js基础</a>
-    </h1>
+    <a href="/2020/11/02/js%E5%9F%BA%E7%A1%80/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">js基础</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="DOM-常用-API"><a href="#DOM-常用-API" class="headerlink" title="DOM 常用 API"></a>DOM 常用 API</h2><p>可以使用 <code>document</code> 或 <code>window</code> 元素的 API 来操作文档本身或获取文档的子类（Web 页面中的各种元素）。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取元素</span></span><br><span class="line"><span class="keyword">const</span> node=<span class="built_in">document</span>.getelementById(id)<span class="comment">//或者querySelector(&quot;.class/#id/name&quot;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//创建元素</span></span><br><span class="line"><span class="keyword">const</span> heading =<span class="built_in">document</span>.createElement(name)  <span class="comment">// p,div</span></span><br><span class="line">heading.innerHTML=<span class="string">&#x27;&#x27;</span>,</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加元素</span></span><br><span class="line"> <span class="built_in">document</span>.body.appendChid(heading)</span><br><span class="line"><span class="comment">//删除元素</span></span><br><span class="line"><span class="built_in">document</span>.body.removeChild(node)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">&quot;en&quot;</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=<span class="string">&quot;UTF-8&quot;</span>&gt;</span><br><span class="line">  &lt;meta name=<span class="string">&quot;viewport&quot;</span> content=<span class="string">&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot;</span>&gt;</span><br><span class="line">  &lt;meta http-equiv=<span class="string">&quot;X-UA-Compatible&quot;</span> content=<span class="string">&quot;ie=edge&quot;</span>&gt;</span><br><span class="line">  &lt;title&gt;DOM 操作&lt;/title&gt;</span><br><span class="line">  &lt;style&gt;</span><br><span class="line">    div &#123;</span><br><span class="line">      border: <span class="number">1</span>px solid #ccc;</span><br><span class="line">      padding: <span class="number">50</span>px;</span><br><span class="line">      width: <span class="number">100</span>px;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div id=<span class="string">&quot;dom1&quot;</span>&gt;元素 <span class="number">1</span>&lt;/div&gt;</span><br><span class="line">  &lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;dom2&quot;</span>&gt;元素 <span class="number">2</span>&lt;/div&gt;</span><br><span class="line">  </span><br><span class="line">  &lt;button <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;btn&quot;</span>&gt;点我&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">const</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.btn&#x27;</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 注册点击事件</span></span><br><span class="line">      btn.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">const</span> dom1 = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;dom1&#x27;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 第一种添加元素</span></span><br><span class="line">        <span class="keyword">const</span> newDom1 = <span class="built_in">document</span>.createElement(<span class="string">&#x27;p&#x27;</span>);</span><br><span class="line">        newDom1.innerHTML = <span class="string">&#x27;&lt;a href=&quot;https://github.com/Jerrynad/Jerrynad.github.io&quot;&gt;tom&lt;/a&gt;&#x27;</span>;</span><br><span class="line">        dom1.appendChild(newDom1);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 第二种添加元素</span></span><br><span class="line">        <span class="keyword">const</span> newDom2 = <span class="built_in">document</span>.createElement(<span class="string">&#x27;ul&#x27;</span>);</span><br><span class="line">        newDom2.innerHTML = <span class="string">`</span></span><br><span class="line"><span class="string">          &lt;li&gt;aaa&lt;/li&gt;</span></span><br><span class="line"><span class="string">          &lt;li&gt;bbb&lt;/li&gt;</span></span><br><span class="line"><span class="string">        `</span>;</span><br><span class="line">        <span class="built_in">document</span>.body.appendChild(newDom2);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 移除元素</span></span><br><span class="line">        <span class="keyword">const</span> dom2 = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.dom2&#x27;</span>);</span><br><span class="line">        <span class="built_in">document</span>.body.removeChild(dom2);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)()</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="null-和-undefined-的区别"><a href="#null-和-undefined-的区别" class="headerlink" title="null 和 undefined 的区别"></a>null 和 undefined 的区别</h2><ul>
-<li><code>null</code> 表示 <code>无</code> 的对象，也就是此处不应该有值；而 <code>undefined</code> 表示未定义。</li>
-<li>在转换数字的时候，<code>Number(null)</code> 为 <code>0</code>，而 <code>Number(undefined)</code> 为 <code>NaN</code>。</li>
-</ul>
-<p>使用场景细分如下：</p>
-<ul>
-<li><code>null</code>：</li>
-</ul>
-<ol>
-<li>作为函数的参数，表示该函数的参数不是对象。</li>
-<li>作为对象原型链的终点。<code>Object.prototype.__proto__ === null</code></li>
-</ol>
-<ul>
-<li><code>undefined</code>：</li>
-</ul>
-<ol>
-<li>变量被声明但是没有赋值，等于 <code>undefined</code>。</li>
-<li>调用函数时，对应的参数没有提供，也是 <code>undefined</code>。</li>
-<li>对象没有赋值，这个属性的值为 <code>undefined</code>。</li>
-<li>函数没有返回值，默认返回 <code>undefined</code>。</li>
-</ol>
-<h2 id="事件流"><a href="#事件流" class="headerlink" title="事件流"></a>事件流</h2><p>什么是事件流：事件流描述的是从页面中接收事件的顺序，<code>DOM 2</code> 级事件流包括下面几个阶段。</p>
-<ul>
-<li>事件捕获阶段</li>
-<li>处于目标阶段</li>
-<li>事件冒泡阶段</li>
-</ul>
-<p>如何让事件先冒泡后捕获：</p>
-<p>在 <code>DOM</code> 标准事件模型中，是先捕获后冒泡。但是如果要实现先冒泡后捕获的效果，对于同一个事件，监听捕获和冒泡，分别对应相应的处理函数，监听到捕获事件，先暂缓执行，直到冒泡事件被捕获后再执行捕获之间。</p>
-<h3 id="addEventListener"><a href="#addEventListener" class="headerlink" title="addEventListener"></a>addEventListener</h3><p><code>addEventListener</code> 方法将指定的监听器注册到 <code>EventTarget</code> 上，当该对象触发指定的事件时，指定的回调函数就会被执行。</p>
-<p><code>addEventListener</code> 事件目标可以是文档上的元素 <code>Element</code>、<code>Document</code> 和 <code>Window</code> 或者任何其他支持事件的对象（例如 <code>XMLHttpRequest</code>）。</p>
-<ul>
-<li>语法：<code>target.addEventListener(type, listener, options/useCapture)</code></li>
-</ul>
-<ol>
-<li><code>type</code>：表示监听事件类型的字符串</li>
-<li><code>listener</code>：所监听的事件触发，会接受一个事件通知对象。</li>
-<li><code>options</code>：一个指定有关 <code>listener</code> 属性的可选参数对象。可选值有 <code>capture</code>（事件捕获阶段传播到这里触发）、<code>once</code>（在 <code>listener</code> 添加之后最多值调用一次）、<code>passive</code>（设置为 <code>true</code> 时表示 <code>listener</code> 永远不会调用 <code>preventDefault()</code>）。</li>
-<li><code>useCapture</code>：在 DOM 树中，注册了 <code>listener</code> 的元素，是否要先于它下面的 <code>EventTarget</code> 调用该 <code>listener</code>。</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;html lang=<span class="string">&quot;en&quot;</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=<span class="string">&quot;UTF-8&quot;</span>&gt;</span><br><span class="line">  &lt;meta name=<span class="string">&quot;viewport&quot;</span> content=<span class="string">&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot;</span>&gt;</span><br><span class="line">  &lt;meta http-equiv=<span class="string">&quot;X-UA-Compatible&quot;</span> content=<span class="string">&quot;ie=edge&quot;</span>&gt;</span><br><span class="line">  &lt;title&gt;监听器&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;table id=<span class="string">&quot;outside&quot;</span>&gt;</span><br><span class="line">    &lt;tr&gt;<span class="xml"><span class="tag">&lt;<span class="name">td</span> <span class="attr">id</span>=<span class="string">&quot;t1&quot;</span>&gt;</span>one<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span>&lt;/tr&gt;</span><br><span class="line">    &lt;tr&gt;<span class="xml"><span class="tag">&lt;<span class="name">td</span> <span class="attr">id</span>=<span class="string">&quot;t2&quot;</span>&gt;</span>two<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span>&lt;/tr&gt;</span><br><span class="line">  &lt;/table&gt;</span><br><span class="line"></span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="comment">// 添加函数   nodeValue是JavaScript中的一个HTML DOM属性；nodeValue属性可以返回或者设置指定节点的值</span></span><br><span class="line">     cosnt modifyText=<span class="function">(<span class="params">text</span>)=&gt;</span>&#123;</span><br><span class="line">         cosnt t2=<span class="built_in">document</span>.querySelector(<span class="string">&#x27;#t2&#x27;</span>)</span><br><span class="line">         <span class="function"><span class="title">if</span>(<span class="params">t2.firstChild.nodeValue===text</span>)</span>&#123;</span><br><span class="line">             t2.firstChild.nodeValue=<span class="string">&#x27;two&#x27;</span></span><br><span class="line">         &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">             t2.firstChild.nodeValue=text</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">      <span class="comment">// 给 Table 添加事件监听器</span></span><br><span class="line">     cosnt element=<span class="built_in">document</span>.querySelector(<span class="string">&#x27;#outside&#x27;</span>)</span><br><span class="line">     element.addEventListener(<span class="string">&#x27;click&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                              modifyText(<span class="string">&#x27;four&#x27;</span>)</span><br><span class="line">                              &#125;,<span class="literal">false</span>);</span><br><span class="line">&#125;)()</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">这个示例简单实现了点击 two 切换到 four，点击 four 再切换到 two 的效果。</span><br></pre></td></tr></table></figure>
-
-<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>事件捕获和事件冒泡分别是 <strong>网景</strong>（Netscape）和 <strong>IE</strong> 对 <code>DOM</code> 事件产生顺序的描述。</p>
-<p><strong>网景</strong> 认为 <code>DOM</code> 接收的事件应该最先是 <code>window</code>，然后到 <code>document</code>，接着一层一层往下，最后才到具体的元素接收到事件，即 <strong>事件捕获</strong>。</p>
-<p><strong>IE</strong> 则认为 <code>DOM</code> 事件应该是具体元素先接收到，然后再一层一层往上，接着到 <code>document</code>，最后才到 <code>window</code>，即 <strong>事件冒泡</strong>。</p>
-<p>最后 <strong>W3C</strong> 对这两种方案进行了统一：将 <code>DOM</code> 事件分为两个阶段，事件捕获和事件冒泡阶段。</p>
-<p>当一个元素被点击，首先是事件捕获阶段，<code>window</code> 最先接收事件，然后一层一层往下捕获，最后由具体元素接收；之后再由具体元素再一层一层往上冒泡，到 <code>window</code> 接收事件。</p>
-<p>所以：</p>
-<ul>
-<li><strong>事件冒泡</strong>：当给某个目标元素绑定了事件之后，这个事件会依次在它的父级元素中被触发（当然前提是这个父级元素也有这个同名称的事件，比如子元素和父元素都绑定了 <code>click</code> 事件就触发父元素的 <code>click</code>）。</li>
-<li><strong>事件捕获</strong>：和冒泡相反，会从上层传递到下层。</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">&quot;en&quot;</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=<span class="string">&quot;UTF-8&quot;</span>&gt;</span><br><span class="line">  &lt;meta name=<span class="string">&quot;viewport&quot;</span> content=<span class="string">&quot;width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no&quot;</span>&gt;</span><br><span class="line">  &lt;meta http-equiv=<span class="string">&quot;X-UA-Compatible&quot;</span> content=<span class="string">&quot;ie=edge&quot;</span>&gt;</span><br><span class="line">  &lt;title&gt;自定义事件&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;ul <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;ul&quot;</span>&gt;</span><br><span class="line">    &lt;li <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;li&quot;</span>&gt;</span><br><span class="line">      &lt;button <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;btn&quot;</span>&gt;点我&lt;/button&gt;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line">  </span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    <span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">const</span> myEvent = <span class="built_in">document</span>.createEvent(<span class="string">&#x27;CustomEvent&#x27;</span>);</span><br><span class="line">      myEvent.initEvent(<span class="string">&#x27;myEvent&#x27;</span>, <span class="literal">true</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> btn = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.btn&#x27;</span>);</span><br><span class="line">      btn.addEventListener(<span class="string">&#x27;myEvent&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;button&#x27;</span>);</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> li = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.li&#x27;</span>);</span><br><span class="line">      li.addEventListener(<span class="string">&#x27;myEvent&#x27;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;li&#x27;</span>);</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">      <span class="keyword">const</span> ul = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.ul&#x27;</span>);</span><br><span class="line">      li.addEventListener(<span class="string">&#x27;myEvent&#x27;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;ul&#x27;</span>);</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">      <span class="built_in">document</span>.addEventListener(<span class="string">&#x27;myEvent&#x27;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;document&#x27;</span>);</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">      <span class="built_in">window</span>.addEventListener(<span class="string">&#x27;myEvent&#x27;</span>, <span class="function">(<span class="params">e</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">&#x27;window&#x27;</span>);</span><br><span class="line">      &#125;)</span><br><span class="line"></span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">        btn.dispatchEvent(myEvent);</span><br><span class="line">      &#125;, <span class="number">2000</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">Chrome 输出下顺序是：button -&gt; li -&gt; ul -&gt; <span class="built_in">document</span> -&gt; <span class="built_in">window</span></span><br><span class="line">如果是捕获的话，那么则相反。</span><br></pre></td></tr></table></figure>
-
-<h3 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">点击一个 input 依次触发的事件</span><br><span class="line"></span><br><span class="line">cosnt text= <span class="built_in">document</span>.getElementById(<span class="string">&#x27;text&#x27;</span>)</span><br><span class="line"></span><br><span class="line">text.onclick= <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;onclick&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line">text.onfocus= <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;onfocus&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line">text.onmousedown= <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;onmousedown&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line">text.onmouseenter= <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;onmouseenter&#x27;</span>)</span><br><span class="line">&#125;</span><br><span class="line">正确顺序是：onmouseenter -&gt; onmousedown -&gt; onfocus -&gt; onclick。</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="阻止冒泡"><a href="#阻止冒泡" class="headerlink" title="阻止冒泡"></a>阻止冒泡</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">event.stopPropagation();</span><br><span class="line"></span><br><span class="line">btn.addEventListener(<span class="string">&#x27;myEvent&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;button&#x27;</span>)</span><br><span class="line">    event.stopPropagation();</span><br><span class="line">&#125;)</span><br><span class="line">通过阻止冒泡，程序只会输出 button，而不会继续输出 li 等。		</span><br></pre></td></tr></table></figure>
-
-<h3 id="onmouseover-和-onmouseenter-区别"><a href="#onmouseover-和-onmouseenter-区别" class="headerlink" title="onmouseover 和 onmouseenter 区别"></a>onmouseover 和 onmouseenter 区别</h3><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1af3fe25bf694f0fa07bef17d5d147d5~tplv-k3u1fbpfcp-watermark.image" alt="img"></p>
-<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>并不是所有的事件都有冒泡，例如：</p>
-<ul>
-<li><code>onblur</code></li>
-<li><code>onfocus</code></li>
-<li><code>onmouseenter</code></li>
-<li><code>onmouseleave</code></li>
-</ul>
-<h2 id="typeof-和-instanceof-的区别"><a href="#typeof-和-instanceof-的区别" class="headerlink" title="typeof 和 instanceof 的区别"></a>typeof 和 instanceof 的区别</h2><p><code>typeof</code>：对某个变量类型的检测，基本类型除了 <code>null</code> 之外，都能正常地显示为对应的类型，引用类型除了函数会显示为 <code>function</code>，其他都显示为 <code>object</code>。</p>
-<p><code>instanceof</code> 主要用于检测某个构造函数的原型对象在不在某个对象的原型链上。</p>
-<p><code>typeof</code> 会对 <code>null</code> 显示错误是个历史 Bug，<code>typeof null</code> 输出的是 <code>object</code>，因为 JavaScript 早起版本是 32 位系统，为了性能考虑使用低位存储变量的类型信息，<code>000</code> 开头代表是对象然而 <code>null</code> 表示为全零，所以它错误判断为 <code>object</code>。</p>
-<p>另外还有 <code>Object.prototype.toString.call()</code> 进行变量判断。</p>
-<h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><p>对于函数而言，指向最后调用函数的那个对象，是函数运行时内部自动生成的一个内部对象，只能在函数内部使用；对于全局而言，<code>this</code> 指向 <code>window</code>。</p>
-<h2 id="JS-位置"><a href="#JS-位置" class="headerlink" title="JS 位置"></a>JS 位置</h2><p><code>clientHeight</code>：表示可视区域的高度，不包含 <code>border</code> 和滚动条</p>
-<p><code>offsetHeight</code>：表示可视区域的高度，包含了 <code>border</code> 和滚动条</p>
-<p><code>scrollHeight</code>：表示了所有区域的高度，包含了因为滚动被隐藏的部分</p>
-<p>clientTop<code>：表示边框 </code>border<code> 的厚度，在未指定的情况下一般为</code>0</p>
-<p><code>scrollTop</code>：滚动后被隐藏的高度，获取对象相对于由 <code>offsetParent</code> 属性指定的父坐标（CSS 定位的元素或 <code>body</code> 元素）距离顶端的高度。</p>
-<h2 id="JS-拖拽"><a href="#JS-拖拽" class="headerlink" title="JS 拖拽"></a>JS 拖拽</h2><ol>
-<li>通过 <code>mousedown</code>、<code>mousemove</code>、<code>mouseup</code> 方法实现</li>
-<li>通过 HTML5 的 <code>Drag</code> 和 <code>Drop</code> 实现</li>
-</ol>
-<h2 id="setTimeout-实现-setInterval"><a href="#setTimeout-实现-setInterval" class="headerlink" title="setTimeout 实现 setInterval"></a>setTimeout 实现 setInterval</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> say = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// do something</span></span><br><span class="line">  <span class="built_in">setTimeout</span>(say, <span class="number">200</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">setTimeout</span>(say, <span class="number">200</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>清除定时器：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i=<span class="number">0</span></span><br><span class="line">cosnt timeList=[]</span><br><span class="line"></span><br><span class="line">csont say=<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    csonsole.log(i++)</span><br><span class="line">    timeList.push(<span class="built_in">setTimeout</span>(say,<span class="number">200</span>))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">setTimeout</span>(say,<span class="number">200</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="function"><span class="title">for</span>(<span class="params"><span class="keyword">let</span> i=<span class="number">0</span>;i&lt;timeList.lenght;i++</span>)</span>&#123;</span><br><span class="line">        <span class="built_in">clearTimeout</span>(timeList[i])</span><br><span class="line">    &#125;</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="实现-Sleep"><a href="#实现-Sleep" class="headerlink" title="实现 Sleep"></a>实现 Sleep</h2><p>实现 <code>1000</code> 毫秒后执行其他内容：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cosnt sleep= <span class="function"><span class="params">time</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            reslove(time)</span><br><span class="line">        &#125;,time)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">sleep(<span class="number">1000</span>).then(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<h2 id="执行上下文"><a href="#执行上下文" class="headerlink" title="执行上下文"></a>执行上下文</h2><h3 id="执行上下文类型"><a href="#执行上下文类型" class="headerlink" title="执行上下文类型"></a>执行上下文类型</h3><p>JavaScript 中有 3 种执行上下文类型：</p>
-<ul>
-<li><strong>全局执行上下文</strong>：这是默认或者说基础的上下文，任何不在函数内部的代码都在全局上下文中。它会执行两件事：创建一个全局的 <code>window</code> 对象（浏览器的情况下），并且设置 <code>this</code> 的值等于这个全局对象。一个程序中只会有一个全局执行上下文。</li>
-<li><strong>函数执行上下文</strong>：每当一个函数被调用时, 都会为该函数创建一个新的上下文。每个函数都有它自己的执行上下文，不过是在函数被调用时创建的。函数上下文可以有任意多个。每当一个新的执行上下文被创建，它会按定义的顺序执行一系列步骤。</li>
-<li><strong>Eval 函数执行上下文</strong>：执行在 <code>eval</code> 函数内部的代码也会有它属于自己的执行上下文，但由于 JavaScript 开发者并不经常使用 <code>eval</code>，所以在这里我不会讨论它。</li>
-</ul>
-<h3 id="执行栈"><a href="#执行栈" class="headerlink" title="执行栈"></a>执行栈</h3><p>执行栈，也就是在其它编程语言中所说的 “调用栈”，是一种拥有 <code>LIFO</code>（后进先出）数据结构的栈，被用来存储代码运行时创建的所有执行上下文。</p>
-<p>当 JavaScript 引擎第一次遇到你的脚本时，它会创建一个全局的执行上下文并且压入当前执行栈。每当引擎遇到一个函数调用，它会为该函数创建一个新的执行上下文并压入栈的顶部。</p>
-<p>引擎会执行那些执行上下文位于栈顶的函数。当该函数执行结束时，执行上下文从栈中弹出，控制流程到达当前栈中的下一个上下文。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&#x27;Hello World!&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">first</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;Inside first function&#x27;</span>);</span><br><span class="line">  second();</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;Again inside first function&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">second</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">&#x27;Inside second function&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">first();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;Inside Global Execution Context&#x27;</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9d9e8a01c9454a27acce6bef077e6793~tplv-k3u1fbpfcp-watermark.image?imageslim" alt="img"></p>
-<h2 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h2><p>函数式编程（Functional Programming，简称 FP）。</p>
-<p>函数式编程：通过对面向对象式编程代码的拆分，将各个功能独立出来，从而达到功能独立、易复用等目的。</p>
-<p>举例：代码转换</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&#x27;john-reese&#x27;</span>, <span class="string">&#x27;harold-finch&#x27;</span>, <span class="string">&#x27;sameen-shaw&#x27;</span>] </span><br><span class="line"><span class="comment">// 转换成 </span></span><br><span class="line">[&#123;<span class="attr">name</span>: <span class="string">&#x27;John Reese&#x27;</span>&#125;, &#123;<span class="attr">name</span>: <span class="string">&#x27;Harold Finch&#x27;</span>&#125;, &#123;<span class="attr">name</span>: <span class="string">&#x27;Sameen Shaw&#x27;</span>&#125;]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>对上面代码进行转换:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr=[<span class="string">&#x27;john-reese&#x27;</span>, <span class="string">&#x27;harold-finch&#x27;</span>, <span class="string">&#x27;sameen-shaw&#x27;</span>] </span><br><span class="line"></span><br><span class="line">cosnt newArr=[]</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">for</span>(<span class="params"><span class="keyword">let</span> i=<span class="number">0</span>,len=arr.length;i&lt;len;i++</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> name=arr[i]</span><br><span class="line">    <span class="comment">//split() 方法用于把一个字符串分割成字符串数组。</span></span><br><span class="line">    <span class="keyword">let</span> names=name.split(<span class="string">&#x27;-&#x27;</span>)</span><br><span class="line">    <span class="keyword">let</span> newName=[]</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="title">for</span>(<span class="params"><span class="keyword">let</span> j=<span class="number">0</span>,nameLen=names.length;j&lt;nameLen;j++</span>)</span>&#123;</span><br><span class="line">        <span class="comment">//slice() 方法可从已有的数组中返回选定的元素。返回一个新的数组，包含从 start 到 end （不包括该元素）的 arrayObject 中的元素。如果 end 未被规定，那么 slice() 方法会选取从 start 到数组结尾的所有元素</span></span><br><span class="line">        <span class="keyword">let</span> nameItem=names[j][<span class="number">0</span>].toUpperCase()+names[j].slice(<span class="number">1</span>)</span><br><span class="line">        newName.push(nameItem)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//join() 方法用于把数组中的所有元素放入一个字符串。</span></span><br><span class="line">    newArr.push(&#123;<span class="attr">name</span>:newName.join(<span class="string">&#x27;&#x27;</span>)&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> newArr;</span><br></pre></td></tr></table></figure>
-
-<p>这份代码中，有 2 个部分：</p>
-<ol>
-<li>拆分数组中字符串，将字符串变成人名。<code>john-reese -&gt; John Reese</code></li>
-<li>将数组转换成对象。<code>[&#39;John Reese&#39;] -&gt; [&#123; name: &#39;John Reese&#39; &#125;]</code></li>
-</ol>
-<p>所以我们直接可以改动：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> changeName = <span class="function">(<span class="params">arr,type</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> arr.map(<span class="function"><span class="params">item</span>=&gt;</span>item.split(type).map(<span class="function"><span class="params">name</span>=&gt;</span>name[<span class="number">0</span>].toUpperCase()+name.splice(<span class="number">1</span>)))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> arrToObj = <span class="function">(<span class="params">arr, key</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">return</span> arr.map(<span class="function"><span class="params">item</span> =&gt;</span> (&#123; [key]: item &#125;));</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = arrToObj(changeName([<span class="string">&#x27;john-reese&#x27;</span>, <span class="string">&#x27;harold-finch&#x27;</span>, <span class="string">&#x27;sameen-shaw&#x27;</span>], <span class="string">&#x27;-&#x27;</span>), <span class="string">&#x27;name&#x27;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result); <span class="comment">// [ &#123; name: &#x27;John Reese&#x27; &#125;, &#123; name: &#x27;Harold Finch&#x27; &#125;, &#123; name: &#x27;Sameen Shaw&#x27; &#125; ]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="函数式编程特点"><a href="#函数式编程特点" class="headerlink" title="函数式编程特点"></a>函数式编程特点</h3><ol>
-<li><strong>函数是一等公民</strong>。可以利用这点让它支持抽取到外部。</li>
-<li><strong>声明做某件时间</strong>。函数式编程大多数声明某个函数需要做什么，而不是它怎么做的。</li>
-<li><strong>便于垃圾回收</strong>。函数内部的变量方便垃圾回收，不会产生太多的变量，用户不需要大量的定义。</li>
-<li><strong>数据不可变</strong>。函数式编程要求所有的数据都是不可变的，如果需要修改某个对象，应该新建后再修改，而不是污染原本的数据。</li>
-<li><strong>无状态</strong>。不管什么时候运行，同一个函数对相同的输入返回相同的输出，而不依赖外部状态的变化。</li>
-<li><strong>无副作用</strong>。功能 A 应该仅仅为了完成它的实现，而不会随着外部的改变而改变，这样当它执行完毕之后，就可以将其内部数据进行回收。并且它不会修改传入的参数。</li>
-</ol>
-<p>注重引用值（Object、Array）的传递，尽可能不要污染传入的数据。</p>
-<h3 id="纯函数"><a href="#纯函数" class="headerlink" title="纯函数"></a>纯函数</h3><p>纯函数的概念有 2 点：</p>
-<ol>
-<li><strong>不依赖外部状态（无状态）</strong>：函数的运行结果不依赖全局变量，<code>this</code> 指针，<code>IO</code> 操作等。</li>
-<li><strong>没有副作用（数据不变）</strong>：不修改全局变量，不修改入参。</li>
-</ol>
-<p>优点：</p>
-<ul>
-<li><p>便于测试和优化</p>
-</li>
-<li><p>可缓存性</p>
-</li>
-<li><p>自文档化</p>
-</li>
-<li><p>更少 Bug</p>
-</li>
-<li><h2 id="规范化"><a href="#规范化" class="headerlink" title="规范化"></a>规范化</h2></li>
-</ul>
-<p><code>CommonJS</code> 规范、<code>AMD</code> 规范、<code>CMD</code> 规范、<code>ES6 Modules</code> 规范这 4 者都是前端规范化的内容，那么它们之间区别是啥呢？</p>
-<p>在没有这些之前，我们通过：</p>
-<ul>
-<li>一个函数就是一个模块。<code>function fn() &#123;&#125;</code></li>
-<li>一个对象就是一个模块。<code>let obj = new Object(&#123; ... &#125;)</code></li>
-<li>立即执行函数（IIFE）。<code>(function() &#123;&#125;)()</code></li>
-</ul>
-<h3 id="CommonJS-规范"><a href="#CommonJS-规范" class="headerlink" title="CommonJS 规范"></a>CommonJS 规范</h3><p>这之后，就有了 <code>CommonJS</code> 规范，其实 <code>CommonJS</code> 我们见得不少，就是 <code>Node</code> 的那套：</p>
-<ul>
-<li>导出：<code>module.exports = &#123;&#125;</code>、<code>exports.xxx = &#39;xxx&#39;</code></li>
-<li>导入：<code>require(./index.js)</code></li>
-<li>查找方式：查找当前目录是否具有文件，没有则查找当前目录的 <code>node_modules</code> 文件。再没有，冒泡查询，一直往系统中的 <code>npm</code> 目录查找。</li>
-</ul>
-<p>它的特点：</p>
-<ol>
-<li>所有代码在模块作用域内运行，不会污染其他文件</li>
-<li><code>require</code> 得到的值是值的拷贝，即你引用其他 JS 文件的变量，修改操作了也不会影响其他文件</li>
-</ol>
-<p>它也有自己的缺陷：</p>
-<ol>
-<li>应用层面。在 <code>index.html</code> 中做 <code>var index = require(&#39;./index.js&#39;)</code> 操作报错，因为它最终是后台执行的，只能是 <code>index.js</code> 引用 <code>index2.js</code> 这种方式。</li>
-<li>同步加载问题。<code>CommonJS</code> 规范中模块是同步加载的，即在 <code>index.js</code> 中加载 <code>index2.js</code>，如果 <code>index2.js</code> 卡住了，那就要等很久。</li>
-</ol>
-<h3 id="AMD-规范"><a href="#AMD-规范" class="headerlink" title="AMD 规范"></a>AMD 规范</h3><p>为什么有 <code>AMD</code> 规范？</p>
-<p>答：<code>CommonJS</code> 规范不中用：</p>
-<ol>
-<li>适用客户端</li>
-<li>等待加载（同步加载问题）。</li>
-</ol>
-<p>所以它做了啥？</p>
-<p>可以采用异步方式加载模块。<code>AMD</code> 是 <code>Asynchronous Module Definition</code> 的缩写，也就是 “异步模块定义”，记住这个 <code>async</code> 就知道它是异步的了。</p>
-<h3 id="CMD-规范"><a href="#CMD-规范" class="headerlink" title="CMD 规范"></a>CMD 规范</h3><p>CMD (Common Module Definition), 是 seajs 推崇的规范，CMD 则是依赖就近，用的时候再 <code>require</code>。</p>
-<p>AMD 和 CMD 最大的区别是对依赖模块的执行时机处理不同，注意不是加载的时机或者方式不同，二者皆为异步加载模块。</p>
-<h3 id="ES6-Modules-规范"><a href="#ES6-Modules-规范" class="headerlink" title="ES6 Modules 规范"></a>ES6 Modules 规范</h3><ul>
-<li>导出：</li>
-</ul>
-<ol>
-<li><code>export a</code></li>
-<li><code>export &#123; a &#125;</code></li>
-<li><code>export &#123; a as jsliang &#125;</code></li>
-<li><code>export default function() &#123;&#125;</code></li>
-</ol>
-<ul>
-<li>导入：</li>
-</ul>
-<ol>
-<li><code>import &#39;./index&#39;</code></li>
-<li><code>import &#123; a &#125; from &#39;./index.js&#39;</code></li>
-<li><code>import &#123; a as jsliang &#125; from &#39;./index.js&#39;</code></li>
-<li><code>import * as index from &#39;./index.js&#39;</code></li>
-</ol>
-<p>特点：</p>
-<ol>
-<li><code>export</code> 命令和 <code>import</code> 命令可以出现在模块的任何位置，只要处于模块顶层就可以。 如果处于块级作用域内，就会报错，这是因为处于条件代码块之中，就没法做静态优化了，违背了 ES6 模块的设计初衷。</li>
-<li><code>import</code> 命令具有提升效果，会提升到整个模块的头部，首先执行。</li>
-</ol>
-<p>和 <code>CommonJS</code> 区别：</p>
-<ul>
-<li><code>CommonJS</code> 模块是运行时加载，<code>ES6 Modules</code> 是编译时输出接口</li>
-<li><code>CommonJS</code> 输出是值的拷贝；<code>ES6 Modules</code> 输出的是值的引用，被输出模块的内部的改变会影响引用的改变</li>
-<li><code>CommonJs</code> 导入的模块路径可以是一个表达式，因为它使用的是<code>require()</code> 方法；而 <code>ES6 Modules</code> 只能是字符串</li>
-<li><code>CommonJS this</code> 指向当前模块，<code>ES6 Modules</code> 的 <code>this</code> 指向 <code>undefined</code></li>
-<li><code>ES6 Modules</code> 中没有这些顶层变量：<code>arguments</code>、<code>require</code>、<code>module</code>、<code>exports</code>、<code>__filename</code>、<code>__dirname</code></li>
-</ul>
-<h2 id="babel-编译原理"><a href="#babel-编译原理" class="headerlink" title="babel 编译原理"></a>babel 编译原理</h2><ul>
-<li><code>babylon</code> 将 <code>ES6/ES7</code> 代码解析成 <code>AST</code></li>
-<li><code>babel-traverse</code> 对 <code>AST</code> 进行遍历转译，得到新的 <code>AST</code></li>
-<li>新 <code>AST</code> 通过 <code>babel-generator</code> 转换成 <code>ES5</code></li>
-</ul>
-<ol>
-<li>黑白七巧板组成的形状，拆分出来得到零件（<code>ES6/ES7</code> 解析成 <code>AST</code>）</li>
-<li>将这些零件换成彩色的（<code>AST</code> 编译得到新 <code>AST</code>）</li>
-<li>将彩色零件拼装成新的形状（<code>AST</code> 转换为 <code>ES5</code>）</li>
-</ol>
-<h2 id="题集"><a href="#题集" class="headerlink" title="题集"></a>题集</h2><h3 id="数组常见-API"><a href="#数组常见-API" class="headerlink" title="数组常见 API"></a>数组常见 API</h3><p><code>push</code>：数组尾部添加元素</p>
-<p><code>unshift</code>：数组头部添加元素</p>
-<p><code>pop</code>：数组尾部移除元素</p>
-<p><code>shift</code>：数组头部移除元素</p>
-<p><code>splice</code>：删除数组元素</p>
-<p><code>slice</code>：截取数组元素</p>
-<p><code>indexOf</code>：查找某元素第一次出现的位置</p>
-<p><code>lastIndexof</code>：查找某元素最后一次出现的位置</p>
-<p><code>findIndex</code>：查找元素第一次出现的位置</p>
-<p><code>forEach</code>：遍历元素</p>
-<p><code>map</code>：遍历元素</p>
-<p><code>filter</code>：过滤元素</p>
-<p><code>some</code>：包含某元素</p>
-<p><code>every</code>：所有元素和某元素一致</p>
-<p><code>includes</code>：查看是否包含某元素</p>
-<p><code>concat</code>：合并元素</p>
-<p><code>join</code>：合并元素，变成字符串</p>
-<p><code>toString</code>：变成字符串</p>
-<p><code>sort</code>：元素排序</p>
-<h3 id="常见-DOM-API"><a href="#常见-DOM-API" class="headerlink" title="常见 DOM API"></a>常见 DOM API</h3><ul>
-<li>获取</li>
-<li>创建</li>
-<li>添加</li>
-<li>删除</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取元素</span></span><br><span class="line"><span class="keyword">const</span> node = <span class="built_in">document</span>.getElementById(id); <span class="comment">// 或者 querySelector(&quot;.class|#id|name&quot;);</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 创建元素</span></span><br><span class="line"><span class="keyword">const</span> heading = <span class="built_in">document</span>.createElement(name); <span class="comment">// name: p、div、h1...</span></span><br><span class="line">heading.innerHTML = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加元素</span></span><br><span class="line"><span class="built_in">document</span>.body.appendChild(heading);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 删除元素</span></span><br><span class="line"><span class="built_in">document</span>.body.removeChild(node);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>];</span><br><span class="line"><span class="comment">// 期望得到：[1, 2, 3]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法一：for 配合新数组截取</span></span><br><span class="line"><span class="keyword">const</span> newArr1=[]</span><br><span class="line"><span class="function"><span class="title">for</span>(<span class="params"> <span class="keyword">let</span> i=<span class="number">1</span>,i&lt;arr.length;i++</span>)</span>&#123;</span><br><span class="line">    <span class="function"><span class="title">if</span>(<span class="params">!newArr1.includes(arr[i])</span>)</span>&#123;</span><br><span class="line">        newArr1.push(arr[i])</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;newArr1&#x27;</span>,newArr1)</span><br><span class="line"><span class="comment">// 方法二：使用 Set</span></span><br><span class="line"><span class="keyword">const</span> newArr2=[...new <span class="built_in">Set</span>(arr)]</span><br><span class="line">consloe.log(<span class="string">&#x27;newArr2&#x27;</span>,newArr2)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法三：使用 filter</span></span><br><span class="line"><span class="keyword">const</span> newArr3=arr.filter(<span class="function">(<span class="params">item,index</span>)=&gt;</span>arr.lastIndexOf(item)===index)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;newArr3&#x27;</span>,newArr3)</span><br></pre></td></tr></table></figure>
-
-<h3 id="遍历问题"><a href="#遍历问题" class="headerlink" title="遍历问题"></a>遍历问题</h3><p>以下代码执行后，array 的结果是？</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array = [ , <span class="number">1</span>, , <span class="number">2</span>, , <span class="number">3</span>];</span><br><span class="line">array = array.map(<span class="function">(<span class="params">i</span>) =&gt;</span> ++i)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>A：<code>[ , 2, , 3, , 4]</code></li>
-<li>B：<code>[NaN, 2, NaN, 3, NaN, 4]</code></li>
-<li>C：<code>[1, 2, 1, 3, 1, 4]</code></li>
-<li>D：<code>[null, 2, null, 3, null, 4]</code></li>
-</ul>
-<hr>
-<p>答案：A</p>
-<p>解释：</p>
-<ol>
-<li><code>forEach()</code>、<code>filter()</code>、<code>reduce()</code>、<code>every()</code> 和 <code>some()</code> 都会跳过空位。</li>
-<li><code>map()</code> 会跳过空位，但会保留这个值</li>
-<li><code>join()</code> 和 <code>toString()</code> 会将空位视为 <code>undefined</code>，而 <code>undefined</code> 和 <code>null</code> 会被处理成空字符串。</li>
-</ol>
-<h3 id="setTimeout"><a href="#setTimeout" class="headerlink" title="setTimeout"></a>setTimeout</h3><blockquote>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>以上代码执行结果？</p>
-<ul>
-<li>A：5 5 5 5 5</li>
-<li>B：0 0 0 0 0</li>
-<li>C：0 1 2 3 4</li>
-<li>D：1 2 3 4 5</li>
-</ul>
-<hr>
-<p>答案：A</p>
-<p>解析：</p>
-<ol>
-<li><code>var i</code> 在 <code>for</code> 中使用，会造成变量污染，从而导致全局有一个遍历 <code>i</code>，这个 <code>i</code> 运行到最后，就是 <code>5</code></li>
-<li><code>setTimeout</code> 是宏任务，在 <code>script</code> 这个宏任务执行完毕后才执行，所以搜集到的 <code>i</code> 是 <code>5</code></li>
-<li>最终输出 5 个 <code>5</code></li>
-</ol>
-<h3 id="requestAnimationFrame"><a href="#requestAnimationFrame" class="headerlink" title="requestAnimationFrame"></a>requestAnimationFrame</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">  requestAnimationFrame(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>以上代码执行结果：</p>
-<ul>
-<li>A：1 2 3 4 5</li>
-<li>B：0 1 2 3 4</li>
-<li>C：4 4 4 4 4</li>
-<li>D：5 5 5 5 5</li>
-</ul>
-<hr>
-<p>答案：B</p>
-<p>解析：</p>
-<ol>
-<li><code>let i</code> 使 <code>for</code> 形成块级作用域。</li>
-<li><code>requestAnimationFrame</code> 类似于 <code>setTimeout</code>，但是它可以当成一个微任务来看，是在微任务队列执行完毕后，执行 UI 渲染前，调用的一个方法。</li>
-<li>因此，这道题并不是指 <code>requestAnimationFrame</code> 会收集 <code>i</code>，而是 <code>let</code> 形成了块级作用域的问题，如果改成 <code>var i</code>，照样输出 5 个 ``</li>
-</ol>
-<h3 id="暂时性死区"><a href="#暂时性死区" class="headerlink" title="暂时性死区"></a>暂时性死区</h3><p>1、下面代码输出什么？</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> test = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a);</span><br><span class="line">  a++;</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>2、下面代码输出什么？</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> test = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a);</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">2</span>;</span><br><span class="line">  a++;</span><br><span class="line">&#125;</span><br><span class="line">test();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>答案：</p>
-<p>第一道题输出：<code>1</code></p>
-<p>第二道题输出：<code>Uncaught ReferenceError: Cannot access &#39;a&#39; before initialization</code></p>
-<p>解析：</p>
-<p>其原因是在同一个 <code>block</code> 中，<code>let</code> 在后面重新定义的，那么就不能在之前引用该变量。同时，也不能取嵌套外层的值。</p>
-<h3 id="输出打印结果"><a href="#输出打印结果" class="headerlink" title="输出打印结果"></a>输出打印结果</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(name);</span><br><span class="line">  <span class="built_in">console</span>.log(age);</span><br><span class="line">  <span class="keyword">var</span> name = <span class="string">&quot;Lydia&quot;</span>;</span><br><span class="line">  <span class="keyword">let</span> age = <span class="number">21</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sayHi();</span><br></pre></td></tr></table></figure>
-
-<p>上面代码输出结果？</p>
-<hr>
-<p>答案：undefined、报错</p>
-<p>解析：</p>
-<p>这道题转变一下就看明白了：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> name; <span class="comment">// 变量提升 - 变量声明</span></span><br><span class="line">  <span class="built_in">console</span>.log(name); <span class="comment">// undefined</span></span><br><span class="line">  <span class="built_in">console</span>.log(age); <span class="comment">// let 存在暂时性死区，不会变量提升</span></span><br><span class="line">  name = <span class="string">&quot;Lydia&quot;</span>; <span class="comment">// 变量提升 - 变量赋值</span></span><br><span class="line">  <span class="keyword">let</span> age = <span class="number">21</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sayHi();</span><br></pre></td></tr></table></figure>
-
-<h3 id="输出打印结果-1"><a href="#输出打印结果-1" class="headerlink" title="输出打印结果"></a>输出打印结果</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunc</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(a);</span><br><span class="line">  <span class="built_in">console</span>.log(func());</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myFunc();</span><br></pre></td></tr></table></figure>
-
-<p>请问输出啥？</p>
-<hr>
-<p>答案：<code>undefined</code> <code>2</code></p>
-<h3 id="Event-Loop"><a href="#Event-Loop" class="headerlink" title="Event Loop"></a>Event Loop</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> <span class="built_in">console</span>.log(i), <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> <span class="built_in">console</span>.log(i), <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>上面代码输出结果？</p>
-<hr>
-<p>答案和解析：</p>
-<p>第一道题目：<code>var</code> 在 <code>for</code> 中存在变量污染，同步代码 <code>for</code> 执行完毕之后，再执行宏任务 <code>setTimeout</code>，发现当前 <code>i</code> 都成为 <code>3</code> 了，所以输出 <code>3、3、3</code></p>
-<p>第二道题目：<code>let</code> 在 <code>for</code> 中会形成块级作用域，每次迭代的时候 <code>i</code> 都是一个新值，并且每个值都存在于循环内的块级作用域，所以输出 <code>0、1、2</code></p>
-<h3 id="输出打印结果-2"><a href="#输出打印结果-2" class="headerlink" title="输出打印结果"></a>输出打印结果</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">  <span class="built_in">setTimeout</span>(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span> - date, i); <span class="comment">// 1</span></span><br><span class="line">  &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span> - date, i); <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-
-<p>请问输出啥？</p>
-<hr>
-<p>答案：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0 5</span><br><span class="line">1001 5</span><br><span class="line">1004 5</span><br><span class="line">1005 5</span><br><span class="line">1006 5</span><br><span class="line">1007 5</span><br></pre></td></tr></table></figure>
-
-<p>解析：题目先走宏任务 <code>script</code>，所以定义了 <code>date</code> 之后，执行注释为 2 这行的 <code>console</code>。</p>
-<p>然后 5 个宏任务，都是定时器 <code>setTimeout</code>，所以会在之后执行，输出：<code>1000 5</code>，但是定时器也不一定准时的，所以有可能是 <code>1001</code>、<code>1002</code> 或者其他的。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/02/js%E5%9F%BA%E7%A1%80/" data-id="ckh0cprs30000vguuhgqtbfbe" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8A%A0%E6%B2%B9%EF%BC%8C%E8%BD%AC%E8%BD%BD%E6%9C%AA%E5%BC%95%E7%94%A8%EF%BC%8C%E5%A6%82%E8%8B%A5%E5%86%92%E7%8A%AF%EF%BC%8C%E8%AF%B7%E5%91%8A%E7%9F%A5/" rel="tag">加油，转载未引用，如若冒犯，请告知</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-My-New-Post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/02/My-New-Post/" class="article-date">
-  <time datetime="2020-11-02T05:37:56.000Z" itemprop="datePublished">2020-11-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/02/My-New-Post/">My New Post</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##你好</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/02/My-New-Post/" data-id="ckh04b4a300003ouucwus5vtg" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
